@@ -1,25 +1,17 @@
 {
-  "name": "btd-global",
+  "name": "btd-global-api",
   "version": "1.0.0",
   "private": true,
-  "main": "node_modules/expo/AppEntry.js",
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "web": "expo start --web",
-    "doctor": "npx expo-doctor"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "@expo/vector-icons": "^15.0.0",
-    "expo": "~54.0.0",
-    "expo-speech": "~14.0.7",
-    "expo-status-bar": "~3.0.0",
-    "expo-speech-recognition": "~3.1.0",
-    "react": "19.1.0",
-    "react-native": "0.81.5"
-  },
-  "devDependencies": {
-    "@types/react": "~19.1.0",
-    "typescript": "~5.9.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
   }
 }
