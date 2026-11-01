@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "BTD Global",
+    "slug": "btd-global",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "btdglobal",
+    "splash": {
+      "backgroundColor": "#080D1B"
+    },
+    "android": {
+      "package": "com.btdglobal.app",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow BTD Global to use your microphone for voice questions.",
+          "speechRecognitionPermission": "Allow BTD Global to convert your speech into text."
+        }
+      ]
+    ]
+  }
+}
